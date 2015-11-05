@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Werules_Autoinvoice>
+            <version>0.1.0</version>
+        </Werules_Autoinvoice>
+    </modules>
+    <global>
+        <events>
+            <sales_order_shipment_save_after>
+                <observers>
+                    <werules_autoinvoice>
+                        <type>singleton</type>
+                        <class>Werules_Autoinvoice_Model_Observer</class>
+                        <method>autoInvoice</method>
+                    </werules_autoinvoice>
+                </observers>
+            </sales_order_shipment_save_after>
+        </events>
+    </global>
+</config>

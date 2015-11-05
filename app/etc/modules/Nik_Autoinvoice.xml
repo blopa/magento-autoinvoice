@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Werules_Autoinvoice>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Werules_Autoinvoice>
+    </modules>
+</config>
